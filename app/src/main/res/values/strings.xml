@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">latest</string>
+    <string name="username">Username or email id</string>
+    <string name="uName">Username</string>
+    <string name="email">Email id</string>
+    <string name="pass">Password</string>
+    <string name="signup">Not a member ? Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="fpass">Forgot Password ?</string>
+</resources>
