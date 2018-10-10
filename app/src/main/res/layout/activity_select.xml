@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/galaxy"
     tools:context=".SelectActivity">
 
    <LinearLayout
@@ -14,7 +15,9 @@
        android:layout_gravity="center">
        <Button
            android:id="@+id/create"
-           android:layout_margin="25dp"
+           android:layout_marginTop="125dp"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
            android:layout_weight="1"
            android:layout_gravity="center"
            android:layout_width="wrap_content"
@@ -23,7 +26,9 @@
 
        <Button
            android:id="@+id/view"
-           android:layout_margin="25dp"
+           android:layout_marginTop="125dp"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
            android:layout_weight="1"
            android:layout_gravity="center"
            android:layout_width="wrap_content"

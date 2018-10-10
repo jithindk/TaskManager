@@ -1,5 +1,6 @@
 package com.example.user.tm;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -52,6 +53,8 @@ public class CreateActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(CreateActivity.this, "Succesful", Toast.LENGTH_SHORT).show();
+                            Intent create= new Intent(CreateActivity.this,ViewActivity.class);
+                            startActivity(create);
                         }
                         else
                         {

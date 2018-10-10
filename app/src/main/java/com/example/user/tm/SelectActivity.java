@@ -29,7 +29,7 @@ public class SelectActivity extends AppCompatActivity {
         viewb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent view= new Intent(SelectActivity.this,CreateActivity.class);
+                Intent view= new Intent(SelectActivity.this,ViewActivity.class);
                 startActivity(view);
             }
         });

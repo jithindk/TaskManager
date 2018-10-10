@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">latest</string>
+    <string name="app_name">Task</string>
     <string name="username">Username or email id</string>
     <string name="uName">Username</string>
     <string name="email">Email id</string>
