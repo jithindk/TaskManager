@@ -17,12 +17,14 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title;
+        public TextView date;
+        public TextView desc;
 
         public MyViewHolder(View view) {
             super(view);
             title = view.findViewById(R.id.title);
-
-
+            date = view.findViewById(R.id.date);
+            desc = view.findViewById(R.id.desc);
         }
     }
 
@@ -35,7 +37,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.single_item, parent, false);
+                .inflate(R.layout.single_relative, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -44,7 +46,8 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Task task = taskList.get(position);
         holder.title.setText(task.getTitle());
-
+        holder.date.setText(task.getDate());
+        holder.desc.setText(task.getDesc());
 
     }
 
